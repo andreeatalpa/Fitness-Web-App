@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+<div class="topnav">
+    <div class ="header-icons">
+        <a href="/cosCumparaturi" title="Cosul meu" >
+            <img alt="Cos" src="https://www.pngitem.com/pimgs/m/21-212128_app-cart-svg-png-app-shopping-cart-icon.png"
+                 width="35" height="35"> </a>
+        <a href="/contulMeu" title="Contul meu">
+            <img alt="Cont" src="https://icon-library.com/images/small-user-icon/small-user-icon-11.jpg"
+                 width="35" height="35"> </a>
+        <a href="/contact">Contact</a>
+        <a href="/tarife">Tarife</a>
+        <a href="/despre">Despre noi</a>
+        <a href="/program">Program</a>
+    </div>
+    <div class="message">
+        <p class="messagetext"></p>
+    </div>
+</div>
+    <div class="registerform">
+        <form action="/register" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword2">Password</label>
+                <input name="password-again" type="password" class="form-control" id="exampleInputPassword2">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputName">Name</label>
+                <input name="name" type="name" class="form-control" id="exampleInputName">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <p th:text="${message}"></p>
+        </form>
+    </div>
+</div>
+
+<style>
+
+        	.form-group {
+		margin: 0 auto;
+		width: 210px;
+	}
+
+	.form-group label{
+		display: inline-block;
+		text-align: right;
+		float: left;
+	}
+
+	.form-group input{
+		display: inline-block;
+		text-align: left;
+		float: right;
+	}
+	button{
+	position:relative;
+    margin-top:5%;
+    left:50%;
+
+	}
+	.registerform{
+	text-size: 32px;
+	align:ccenter;
+	padding-top:175px;}
+
+	body{
+  background-image: url("https://www.wall-street.ro/image_thumbs/articles/4/7/1/247138/p_247138_900x675-00-65.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: none;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+  font-weight:bold;
+  text-align: center;
+  text-decoration: none;
+  font-color: black;
+  font-size: 20px;
+  padding-top: 60px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;}
+
+  h3{
+  padding-bottom:100px;
+  padding-top:200px;
+  text-align:center;
+  font-family:monospace;
+  font-size:35px;
+  text-color:yellow;
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+
+
+    </style>
+
+</body>
+</html>

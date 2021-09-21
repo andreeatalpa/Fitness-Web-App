@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarife</title>
+</head>
+<body>
+<h1 id="acasa"><a href="/index">ACASA</a></h1>
+<div class="topnavs">
+    <div class ="header-icons">
+        <a href="/cosCumparaturi" title="Cosul meu" >
+            <img alt="Cos" src="https://www.pngitem.com/pimgs/m/21-212128_app-cart-svg-png-app-shopping-cart-icon.png"
+                 width="35" height="35"> </a>
+        <a href="/contulMeu" title="Contul meu">
+            <img alt="Cont" src="https://icon-library.com/images/small-user-icon/small-user-icon-11.jpg"
+                 width="35" height="35"> </a>
+        <a href="/contact">Contact</a>
+        <a href="/tarife">Tarife</a>
+        <a href="/despre">Despre noi</a>
+        <a href="/program">Program</a>
+
+    </div>
+</div>
+
+</div>
+<h2>TARIFE</h2>
+
+<div id="row" >
+    <table>
+        <thead class="pret">
+        <tr class="tr1" align="left">
+            <th>Serviciu</th>
+            <th>&nbsp &nbsp Pret</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="td1">ACCES NELIMITAT LA FITNESS SI AEROBIC</td>
+            <td class="td1"> &nbsp &nbsp 210 Lei </td>
+            <td class="td1">
+                <form action="/cosCumparaturi" method="post">
+                    <input name="abonamentId" hidden value="0">
+                    <button type="submit" class="btn-primary" onclick="saveAb();">Adauga in cos</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>ACCES NELIMITAT LA FINTESS</td>
+            <td>&nbsp &nbsp 179 Lei</td>
+            <td class="td1">
+            <form action="/cosCumparaturi" method="post">
+                <input name="abonamentId" hidden value="1">
+                <button type="submit" class="btn-primary" onclick="saveAb();">Adauga in cos</button>
+            </form>
+            </td>
+        </tr>
+        <tr><td>O SEDINTA FITNESS/AEROBIC</td>
+            <td>&nbsp &nbsp 35 Lei</td>
+            <td class="td1">
+                <form action="/cosCumparaturi" method="post">
+                    <input name="abonamentId" hidden value="2">
+                    <button type="submit" class="btn-primary" onclick="saveAb();">Adauga in cos</button>
+                </form>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+</div>
+<style>
+    tbody{
+            font-size: 25px;
+            padding-top: 100px;}
+
+    .td1{
+            padding-top: 30px;}
+
+    table{
+            margin-top: 75px;}
+    .pret{
+            background-color: #2a313a;
+            background-position: 50% 50%;
+            border-collapse: collapse;
+            border-bottom: 15px solid #f6d63;
+            width: inherit;
+            height: 35px;
+            font-size: 25px;
+            margin-left: auto;
+            margin-right: auto;
+
+            }
+    button{
+    text-align:center;
+    font-size: 15px;
+    border-radius:10px;
+    box-shadow:0 1px 2px #5e5d5b;
+    height:30px;
+
+    }
+
+    h2{
+    text-align:left;
+    font-size:44;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 300px;
+    }
+
+body{
+  background-image: url("https://www.wall-street.ro/image_thumbs/articles/4/7/1/247138/p_247138_900x675-00-65.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: none;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+  font-weight:bold;
+  text-align: center;
+  text-decoration: none;
+  font-color: black;
+      padding-top: 5px;
+      padding-right: 30px;
+      padding-bottom: 5px;
+      padding-left: 30px;
+      font-size: 20px;
+
+  h3{
+  padding-bottom:100px;
+  padding-top:200px;
+  text-align:center;
+  font-family:monospace;
+  font-size:35px;
+  text-color:yellow;
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+</style>
+
+<script>
+ function saveAb(){
+
+        }
+
+</script>
+
+</body>
+</html>
